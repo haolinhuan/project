@@ -1,0 +1,11 @@
+
+server:
+  port: 12003
+spring:
+  application:
+    name: spring-cloud-product
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:12001/eureka/

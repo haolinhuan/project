@@ -1,0 +1,13 @@
+server:
+  port: 12001
+spring:
+  application:
+    name: spring-cloud-eureka
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceurl.defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
