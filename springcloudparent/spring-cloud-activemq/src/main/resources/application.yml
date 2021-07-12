@@ -1,0 +1,27 @@
+server:
+  port: 13001
+spring:
+  application:
+    name: spring-cloud-redis
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+  redis:
+    database: 0
+    host: 192.168.31.50
+    port: 6379
+    password:
+    lettuce:
+      pool:
+        max-active: 8
+        max-wait: -1
+        max-idle: 8
+        min-idle: 0
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:12001/eureka/
+feign:
+  httpclient:
+    connection-timeout: 10000
