@@ -1,8 +1,0 @@
-server:
-  port: 8088
-spring:
-  application:
-    name: xc-service-freemarker #指定服务名
-  freemarker:
-    cache: false #关闭模板缓存，方便测试
-        #进行模板测试
